@@ -398,3 +398,37 @@ li {
   box-sizing: border-box;
   position: relative;
 }
+/* 📱 Fully Responsive Paper Preview */
+.paperWrapper {
+  max-width: 794px;
+  width: 100%;
+  background: white;
+  margin: auto;
+  padding: 1in;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Responsive print-safe adjustments */
+@media (max-width: 768px) {
+  .paperWrapper {
+    padding: 1rem;
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .previewSection {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainLayout {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
